@@ -1,0 +1,83 @@
+
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <style>
+    body{
+	height:100%;
+	width:100%;
+  background-image: url(5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        .main
+    {
+       width: 300px;
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: #191919;
+        text-align: center;
+        border-radius: 15px;
+      }
+      .main h1{
+        font-family:arial;
+        font-weight:400;
+
+      }
+      #location{
+      display:block;
+      margin: 10px auto;
+      width: 100%;
+      height: 30px;
+      font-weiht:40;
+      border:0px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .main #submit{
+      margin:1rem 0;
+      background-color: white;
+      padding:10px;
+      border-radius: 10px;
+      border: 0px;
+
+      }
+    .main #submit:hover{
+      background:blue;
+      transition: width 2s, height 4s;
+    }
+    .main #locate{
+      margin:1rem 0;
+      background-color: white;
+      padding:10px;
+      border-radius: 10px;
+      border: 0px;
+
+      }
+    .main #locate:hover{
+      background:blue;
+      transition: width 2s, height 4s;
+    }
+    }
+
+        </style>
+        <meta charset="utf-8">
+        <title></title>
+      </head>
+      <body>
+	<div class="bck">
+        <div class="main">
+        <form action="/login" method=post >
+          <p><h4><font face="arial" color="white">Enter The Location</font></h4><p>
+          <input type="text" id="location" name="location" placeholder="Location">
+          <input type="submit" formaction="/bottom" value="FIND WEATHER" id="submit">
+          <br>
+          <input type="submit" formaction="/top" value="LOCATE & FIND" id="locate">
+          </form>
+        </div>
+	</div>
+      </body>
+    </html>
